@@ -32,7 +32,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { 
   var theProduct = a * b;
   var theString = `The product of ${a} and ${b} is ${theProduct}.`;
-  return [theProduct, theString]
+  return [theProduct, theString];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -57,7 +57,7 @@ function sumAndMultiply(a, b, c) {
   var theProduct = a * b * c;
   var theString1 = `${a} and ${b} and ${c} sum to ${theSum}.`;
   var theString2 = `The product of ${a} and ${b} and ${c} is ${theProduct}.`;
-  return [theSum, theProduct, theString1, theString2]
+  return [theSum, theProduct, theString1, theString2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -82,7 +82,7 @@ function sumArray(sumArr) {
   var theSum = sum(sumArr[0], sumArr[1])[0];
   theSum = sum(theSum, sumArr[2])[0];
   var theString = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${theSum} is their sum.`;
-  return [theSum, theString]
+  return [theSum, theString];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -106,7 +106,7 @@ function multiplyArray(multArr) {
   var theProduct = multiply(multArr[0], multArr[1])[0];
   theProduct = multiply(theProduct, multArr[2])[0];
   var theString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${theProduct}.`;
-  return [theProduct, theString]
+  return [theProduct, theString];
 
 }
 
@@ -134,13 +134,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { 
+function multiplyAnyArray(dynamicArray) {
   var theProduct = 1;
   var theString = 'The numbers ';
 
   //the for loop multiplies the product by each element of the array 1 at a time
   for(var i = 0; i < dynamicArray.length; i++){
-    theProduct = multiply(theProduct, dynamicArray[i])[0]  
+    theProduct = multiply(theProduct, dynamicArray[i])[0];
   }
 
   //the for loop first adds each element of the array after "The numbers " then is bookended with " have a product of ${theProduct}." to complete the phrase
@@ -153,7 +153,7 @@ function multiplyAnyArray(dynamicArray) {
   }
   theString = theString + ` have a product of ${theProduct}.`;
 
-  return [theProduct, theString]
+  return [theProduct, theString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
