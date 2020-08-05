@@ -102,7 +102,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { 
+function multiplyArray(multArr) {
   var theProduct = multiply(multArr[0], multArr[1])[0];
   theProduct = multiply(theProduct, multArr[2])[0];
   var theString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${theProduct}.`;
@@ -147,7 +147,7 @@ function multiplyAnyArray(dynamicArray) {
   for(var j = 0; j < dynamicArray.length; j++){
     if ((j + 1) < dynamicArray.length){
       theString = theString + `${dynamicArray[j]}` + ',';
-    } else {
+    } else  {
       theString = theString + `${dynamicArray[j]}`;
     }
   }
